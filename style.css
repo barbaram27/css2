@@ -1,41 +1,73 @@
+/* Importa uma fonte mais estilosa */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
 
-/* 1. Aspectos gerais */
 body {
-  width: 1000px;
-  font-family: sans-serif;
+  width: 100%;
+  max-width: 1000px;
   margin: 0 auto;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  padding: 20px;
 }
 
-p {
-  text-indent: 1em;
-}
-
-/* 2. Títulos alinhados e tamanhos */
-h1 {
-  font-size: 1.8rem;
+header {
+  background-color: #4f46e5;
+  color: white;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
 }
 
 h2 {
   font-size: 1.4rem;
-  text-align: center;
+  margin-top: 10px;
+}
+
+section {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-align: center;
+  color: #4f46e5;
+  margin-bottom: 15px;
 }
 
-/* 3. Seções de resumo e principal */
-.summary {
-  text-align: center;
+p {
+  text-indent: 1em;
+  line-height: 1.6;
 }
 
-.main p {
-  line-height: 1.5;
-}
-
-/* 4. Abreviaturas */
+/* Abreviações em small-caps */
 abbr {
   font-variant: small-caps;
+  font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
 }
